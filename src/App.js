@@ -1,5 +1,6 @@
 import React from "react"
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 import './styles/App.css'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
@@ -9,6 +10,7 @@ function App() {
             <div className="App">
                 <Switch>
                     <Route path='/checkout'>
+                        <Navbar/>
                         <h1>Bonjour Amazon Clone &#128640;</h1>
                     </Route>
                     <Route path='/login'>
@@ -16,7 +18,7 @@ function App() {
                     </Route>
                     <Route path='/'>
                         <Navbar/>
-                        <h1 style={{height: "200vh"}}>Home page &#127984;</h1>
+                        <Home/>
                     </Route>
                 </Switch>
             </div>
