@@ -1,18 +1,21 @@
 export const initialState = {
-    basket: ["iphone","mac"]
+    basket: [],
+    user: null
 };
 
-function reducer(state, action) {
+const Reducer = (state, action) => {
+    /*console.log(action);*/
     switch(action.type) {
         case 'ADD_TO_BASKET':
-            //add
-            break;
+            return {
+                ...state,
+                basket: [...state.basket, action.item],
+            };
         case 'REMOVE_FROM_BASKET':
-            //removing
-            break;
+            return {state};
         default:
             return state;
     }
-}
+};
 
-export default reducer;
+export default Reducer;
