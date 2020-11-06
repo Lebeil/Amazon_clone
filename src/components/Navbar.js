@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Navbar.css'
 import {Link} from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 
 const Navbar = () => {
     return (
@@ -20,8 +21,29 @@ const Navbar = () => {
             <div className="header_nav">
                 <Link to="/login" className="header_link">
                     <div className="header_option">
-                        <span>Hello Marc</span>
-                        <span>Sign in</span>
+                        <span className="header_option1">Bonjour,</span>
+                        <span className="header_option2">Sign in</span>
+                    </div>
+                </Link>
+
+                <Link to="/login" className="header_link">
+                    <div className="header_option">
+                        <span className="header_option1">Retours</span>
+                        <span className="header_option2"> et commandes</span>
+                    </div>
+                </Link>
+
+                <Link to="/login" className="header_link">
+                    <div className="header_option">
+                        <span className="header_option1">Prime</span>
+                        <span className="header_option2">Amazon</span>
+                    </div>
+                </Link>
+
+                <Link to="/checkout" className="header_link">
+                    <div className="header_optionBasket">
+                        <ShoppingBasketIcon/>
+                        <span className="header_option2 header_basketCount">0</span>
                     </div>
                 </Link>
             </div>

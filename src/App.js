@@ -1,6 +1,6 @@
 import React from "react"
 import Navbar from "./components/Navbar";
-import './App.css'
+import './styles/App.css'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
                     </Route>
                     <Route path='/'>
                         <Navbar/>
-                        <h1>Home page &#127984;</h1>
+                        <h1 style={{height: "200vh"}}>Home page &#127984;</h1>
                     </Route>
                 </Switch>
             </div>
