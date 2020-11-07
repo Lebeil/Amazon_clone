@@ -1,6 +1,7 @@
 import React from "react"
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
+import Checkout from "./components/Checkout";
 import './styles/App.css'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
@@ -11,7 +12,7 @@ function App() {
                 <Switch>
                     <Route path='/checkout'>
                         <Navbar/>
-                        <h1>Bonjour Amazon Clone &#128640;</h1>
+                        <Checkout/>
                     </Route>
                     <Route path='/login'>
                         <h1>Login page</h1>
