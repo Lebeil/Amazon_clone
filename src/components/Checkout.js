@@ -1,4 +1,5 @@
 import React from 'react';
+import Subtotal from "./Subtotal";
 /*import {useStateValue} from "../StateProvider";*/
 import '../styles/Checkout.css'
 
@@ -22,7 +23,7 @@ const Checkout = () => {
             </div>
 
             <div className="checkout_right">
-                <h2>The subTotal will go here </h2>
+                <Subtotal/>
             </div>
 
         </div>

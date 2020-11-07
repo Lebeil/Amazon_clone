@@ -8,7 +8,7 @@ import { useStateValue } from "../StateProvider";
 const Navbar = () => {
     const [{basket}] = useStateValue();
 
-    console.log(basket);
+    /*console.log(basket);*/
 
     return (
         <nav className="header">
@@ -48,7 +48,7 @@ const Navbar = () => {
                 <Link to="/checkout" className="header_link">
                     <div className="header_optionBasket">
                         <ShoppingBasketIcon/>
-                        <span className="header_option2 header_basketCount">{basket.length}</span>
+                        <span className="header_option2 header_basketCount">{basket?.length}</span>
                     </div>
                 </Link>
             </div>

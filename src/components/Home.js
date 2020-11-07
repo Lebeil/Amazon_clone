@@ -14,7 +14,7 @@ const Home = () => {
                     <Product
                         id="12321341"
                         title="Apple MacBook Pro (16 pouces, 16Go RAM, 1To de Stockage, Intel Core i9 2,3GHz) Gris Sidéral"
-                        price={2949.00}
+                        price={2949.0}
                         rating={5}
                         image="https://m.media-amazon.com/images/I/71L2iBSyyOL._AC_UL320_.jpg"
                     />
