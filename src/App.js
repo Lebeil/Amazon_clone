@@ -2,6 +2,7 @@ import React from "react"
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Checkout from "./components/Checkout";
+import Login from "./components/Login";
 import './styles/App.css'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
@@ -15,7 +16,7 @@ function App() {
                         <Checkout/>
                     </Route>
                     <Route path='/login'>
-                        <h1>Login page</h1>
+                        <Login/>
                     </Route>
                     <Route path='/'>
                         <Navbar/>
