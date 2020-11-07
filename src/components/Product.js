@@ -27,12 +27,11 @@ function Product ({id, title, image, price, rating}) {
                     <strong>{price}</strong>
                 </p>
                 <div className="product_rating">
-                    {rating}
-                    &#11088;&#11088;&#11088;&#11088;&#11088;
+                    {Array.from({length: rating}, ()=> '🌟')}
                     {/*{Array(rating)
                         .fill()
-                        .map((_) => (
-                            <p>&#11088;</p>
+                        .map((_, i) => (
+                            <p>🌟</p>
                         ))}*/}
                 </div>
             </div>

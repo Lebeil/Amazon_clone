@@ -12,46 +12,46 @@ const Home = () => {
                 {/*Product*/}
                 <div className="home_row">
                     <Product
-                        id="12321341"
+                        id="1"
                         title="Apple MacBook Pro (16 pouces, 16Go RAM, 1To de Stockage, Intel Core i9 2,3GHz) Gris Sidéral"
                         price={2949.0}
-                        rating={5}
+                        rating={3}
                         image="https://m.media-amazon.com/images/I/71L2iBSyyOL._AC_UL320_.jpg"
                     />
                     <Product
-                        id="12321342"
+                        id="2"
                         title="Nouveau Apple iPhone 12 (128 Go) - Bleu"
                         price={959.00}
-                        rating={4.5}
+                        rating={3.5}
                         image="https://m.media-amazon.com/images/I/71ZOtNdaZCL._AC_UL320_.jpg"
                     />
                 </div>
                 <div className="home_row">
                     <Product
-                        id="12321341"
+                        id="3"
                         title="Nouveau Apple iPhone 12 Pro Max (512 Go) - Graphite"
                         price={1349.99}
-                        rating={5}
+                        rating={4}
                         image="https://m.media-amazon.com/images/I/71c7UQ9XPmL._AC_UL320_.jpg"
                     />
                     <Product
-                        id="12321541"
+                        id="4"
                         title="Dyson V11 Absolute, Bleu, Taille L"
                         price={829.99}
-                        rating={5}
+                        rating={2}
                         image="https://m.media-amazon.com/images/I/51T-zO0g+xL._AC_UL320_.jpg"
                     />
                     <Product
-                        id="52321341"
+                        id="5"
                         title="Véritable® Classic (Blanc) - Potager d’Intérieur Fabriqué en France – Jardin Autonome Intelligent Livré Avec 4 Lingot® - Élu Produit De l’Année 2020"
                         price={149.09}
-                        rating={5}
+                        rating={4}
                         image="https://images-eu.ssl-images-amazon.com/images/I/41VY6yrnvBL._AC_SX184_.jpg"
                     />
                 </div>
                 <div className="home_row">
                     <Product
-                        id="12321341"
+                        id="6"
                         title="Lean Startup: Adoptez l'innovation continue"
                         price={29.99}
                         rating={5}
