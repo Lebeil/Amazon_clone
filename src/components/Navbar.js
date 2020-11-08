@@ -4,11 +4,16 @@ import {Link} from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import { useStateValue } from "../StateProvider";
+import {auth} from '../Firebase';
 
 const Navbar = () => {
-    const [{basket}] = useStateValue();
+    const [{basket, user}] = useStateValue();
 
-    /*console.log(basket);*/
+    const handleAuth = ()=> {
+        if (user) {
+            auth.signOut();
+        }
+    }
 
     return (
         <nav className="header">
@@ -24,12 +29,31 @@ const Navbar = () => {
 
             {/*Links*/}
             <div className="header_nav">
-                <Link to="/login" className="header_link">
-                    <div className="header_option">
-                        <span className="header_option1">Bonjour,</span>
-                        <span className="header_option2">Sign in</span>
+                <Link to={!user && '/login'} className="header_link">
+                    <div className="header_option" onClick={handleAuth}>
+                        <span className="header_option1">Bonjour {!user ? 'Invité(e)' : user.email}</span>
+                        <span className="header_option2">{user ? 'Déconnexion' : 'Se connecter'}</span>
                     </div>
                 </Link>
+
+                {/****** solution ******/}
+                {/*Warning: Failed prop type: Invalid prop `to` supplied to `Link`.*/}
+
+                {/*{!user ?
+                    <Link to='/login' className="header_link">
+                    <div className="header_option" onClick={handleAuth}>
+                        <span className="header_option1">Bonjour {!user ? 'Invité(e)' : user.email}</span>
+                        <span className="header_option2">{user ? 'Déconnexion' : 'Se connecter'}</span>
+                    </div>
+                    </Link>
+                    : <Link to='/' className="header_link">
+                        <div className="header_option" onClick={handleAuth}>
+                            <span className="header_option1">Bonjour {!user ? 'Invité(e)' : user.email}</span>
+                            <span className="header_option2">{user ? 'Déconnexion' : 'Se connecter'}</span>
+                        </div>
+                </Link>}*/}
+
+                {/**********************/}
 
                 <Link to="/login" className="header_link">
                     <div className="header_option">
