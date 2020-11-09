@@ -15,7 +15,7 @@ const Home = () => {
                         id="1"
                         title="Apple MacBook Pro (16 pouces, 16Go RAM, 1To de Stockage, Intel Core i9 2,3GHz) Gris Sidéral"
                         price={2949.0}
-                        rating={3}
+                        rating={5}
                         image="https://m.media-amazon.com/images/I/71L2iBSyyOL._AC_UL320_.jpg"
                     />
                     <Product

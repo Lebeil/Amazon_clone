@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Checkout from "./components/Checkout";
 import Login from "./components/Login";
+import Payment from "./components/Payment";
 import './styles/App.css'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import {auth} from './Firebase'
@@ -32,6 +33,10 @@ function App() {
         <Router>
             <div className="App">
                 <Switch>
+                    <Route exact path='/'>
+                        <Navbar/>
+                        <Home/>
+                    </Route>
                     <Route path='/checkout'>
                         <Navbar/>
                         <Checkout/>
@@ -39,9 +44,9 @@ function App() {
                     <Route path='/login'>
                         <Login/>
                     </Route>
-                    <Route path='/'>
+                    <Route path='/payment'>
                         <Navbar/>
-                        <Home/>
+                        <Payment/>
                     </Route>
                 </Switch>
             </div>
