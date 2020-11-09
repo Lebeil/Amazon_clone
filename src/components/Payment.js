@@ -36,6 +36,10 @@ const Payment = () => {
                     <div className="payment_title">
                         <h3>Mode de paiement</h3>
                     </div>
+                    <div className="payment_details">
+                        {/*stripe here*/}
+                        <p>Paid</p>
+                    </div>
                 </div>
 
                 <div className="payment_section">
